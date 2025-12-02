@@ -1,3 +1,6 @@
 pandas
 sentence-transformers
 numpy
+faiss-cpu
+streamlit
+PyPDF2
