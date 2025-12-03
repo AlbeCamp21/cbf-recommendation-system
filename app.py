@@ -9,7 +9,7 @@ pln_dir = os.path.join(current_dir, 'PLN')
 if pln_dir not in sys.path:
     sys.path.insert(0, pln_dir)
 
-from recommender import RecommendationEngine
+from PLN.recommender import RecommendationEngine
 
 
 # Configuracion de la pagina

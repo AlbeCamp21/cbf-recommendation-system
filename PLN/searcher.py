@@ -15,9 +15,9 @@ class JobSearcher:
             # Obtener ruta relativa desde este archivo
             current_dir = os.path.dirname(os.path.abspath(__file__))
             processed_data_dir = os.path.join(
-                os.path.dirname(current_dir), 
-                'dataset', 
-                'processed'
+                os.path.dirname(current_dir),
+                'dataset',
+                'clean'
             )
         
         self.processed_data_dir = processed_data_dir
