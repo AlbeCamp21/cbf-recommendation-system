@@ -1,118 +1,135 @@
-import argparse
-import json
-import pandas as pd
-import re
 import os
+import re
+import json
 import pickle
+import argparse
+import warnings
+import pandas as pd
+import numpy as np
 from sentence_transformers import SentenceTransformer
+from tqdm import tqdm
 
-def parse_cli_arguments():
-    """Parses command line arguments."""
-    parser = argparse.ArgumentParser(description="Embedding Generator")
-    
-    parser.add_argument(
-        "input_path", 
-        type=str, 
-        help="Path to the input JSON file (e.g., data/avisos_programador.json)"
-    )
+os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+warnings.filterwarnings("ignore")
 
-    parser.add_argument(
-        "--output", 
-        type=str, 
-        default=None, 
-        help="Path for the output .pkl file. If empty, generates name automatically."
-    )
+class JobOfferProcessor:
+    def __init__(self, model_name: str = 'paraphrase-multilingual-MiniLM-L12-v2'):
+        print(f"Inicializando procesador...")
+        self.model = SentenceTransformer(model_name)
+        print("OK - Modelo IA cargado.")
 
-    return parser.parse_args()
+    def clean_text(self, text: str) -> str:
+        """Limpieza profunda para que la IA entienda mejor."""
+        if not isinstance(text, str): return ""
+        text = text.lower()
+        text = re.sub(r'[\n\t\r]', ' ', text)
+        text = re.sub(r'[^a-zA-Z0-9áéíóúñÁÉÍÓÚÑ\s]', ' ', text)
+        return re.sub(r'\s+', ' ', text).strip()
 
-def generate_output_path(input_path):
-    """
-    Generates an output filename based on the input filename.
-    Input:  'dataset/avisos_programador.json'
-    Output: 'dataset/processed/vectors_programador.pkl'
-    """
-    directory = os.path.dirname(input_path)
-    filename = os.path.basename(input_path)
+    def load_and_tag_from_folder(self, folder_path: str) -> pd.DataFrame:
+        """
+        1. Lee los archivos JSON.
+        2. Extrae la categoría del nombre del archivo.
+        3. Etiqueta cada oferta con esa categoría.
+        """
+        if not os.path.exists(folder_path):
+            raise FileNotFoundError(f"No existe: {folder_path}")
+            
+        all_records = []
+        files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
+        
+        print(f"Procesando {len(files)} archivos para extracción de categorías...")
 
-    name_without_ext = os.path.splitext(filename)[0]    # "avisos_programador"
-    job_name = name_without_ext.replace("avisos_", "")  # "programador"
+        for filename in tqdm(files):
+            file_tag = filename.replace("avisos_", "").replace(".json", "")
+            
+            full_path = os.path.join(folder_path, filename)
+            try:
+                with open(full_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    
+                    if isinstance(data, list):
+                        for offer in data:
+                            offer['category'] = file_tag
+                        
+                        all_records.extend(data)
+            except Exception as e:
+                print(f"X - Error en {filename}: {e}")
 
-    new_filename = f"vectors_{job_name}.pkl"
+        return pd.DataFrame(all_records)
 
-    return os.path.join(directory, "processed", new_filename)
+    def filter_and_deduplicate(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Elimina duplicados comparando SOLO LA DESCRIPCIÓN.
+        """
+        initial_count = len(df)
+        
+        # 1. Eliminar vacíos
+        df = df.dropna(subset=['title', 'description'])
+        df = df[df['description'].str.strip() != ""]
+        
+        # 2. ELIMINAR DUPLICADOS POR DESCRIPCIÓN
+        df = df.drop_duplicates(subset=['title', 'description'], keep='first')
+        
+        # Resetear índice para que quede ordenado
+        df = df.reset_index(drop=True)
+        
+        removed = initial_count - len(df)
+        print(f"Limpieza (Duplicados por Descripción):")
+        print(f"{initial_count} iniciales -> {len(df)} únicos ({removed} eliminados).")
+        
+        return df
 
-def clean_text_content(text_input):
-    """
-    Normalizes text: converts to lowercase, removes newlines, tabs, 
-    and special characters.
-    """
-    if not isinstance(text_input, str):
-        return ""
-    
-    normalized_text = text_input.lower()
-    normalized_text = re.sub(r'[\n\t\r]', ' ', normalized_text)
-    normalized_text = re.sub(r'[^a-zA-Z0-9áéíóúñÁÉÍÓÚÑ\s]', '', normalized_text)
-    normalized_text = re.sub(r'\s+', ' ', normalized_text).strip()
-    return normalized_text
+    def run_pipeline(self, input_folder: str, output_path: str):
+        folder_abs = os.path.abspath(input_folder)
+        output_abs = os.path.abspath(output_path)
+        
+        print(f"\n--- INICIO DEL PROCESO ---")
+        
+        # 1. Carga y Etiquetado
+        df = self.load_and_tag_from_folder(folder_abs)
+        if df.empty:
+            print("No hay datos.")
+            return
 
-def main():
-    args = parse_cli_arguments()
+        # Mostrar cuántos hay por categoría antes de limpiar
+        print("\nConteo por categoría detectada (Antes de limpiar):")
+        print(df['category'].value_counts())
 
-    if args.output:
-        output_path = args.output
-    else:
-        output_path = generate_output_path(args.input_path)
+        # 2. Limpieza (Duplicados por Descripción)
+        df = self.filter_and_deduplicate(df)
+        if df.empty: return
 
-    if not os.path.exists(args.input_path):
-        print(f" ERROR: Input file not found at: {args.input_path}")
-        return
+        # 3. NLP Cleaning (Para la IA)
+        print("\nGenerando texto limpio para la IA...")
+        combined = df['title'].fillna('') + " " + df['category'].fillna('') + ". " + df['description'].fillna('')
+        df['cleaned_text'] = combined.apply(self.clean_text)
+        df = df[df['cleaned_text'] != ""]
 
-    print(f"Loading raw data from: {args.input_path}")
-    print(f"Target output file: {output_path}")
-
-    try:
-        with open(args.input_path, 'r', encoding='utf-8') as file:
-            raw_data = json.load(file)
-    except Exception as e:
-        print(f"ERROR reading JSON: {e}")
-        return
-
-    jobs_df = pd.DataFrame(raw_data)
-    
-    if jobs_df.empty:
-        print("WARNING: The JSON file is empty.")
-        return
-
-    print(f"Loaded {len(jobs_df)} job offers.")
-
-    print("Preprocessing text...")
-    jobs_df['combined_text'] = jobs_df['title'].fillna('') + ". " + jobs_df['description'].fillna('')
-    jobs_df['cleaned_text'] = jobs_df['combined_text'].apply(clean_text_content)
-
-    print("Loading AI Model...")
-    embedding_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
-    
-    print("Generating vectors (Embeddings)...")
-    job_embeddings = embedding_model.encode(jobs_df['cleaned_text'].tolist(), show_progress_bar=True)
-
-    final_payload = {
-        "metadata": jobs_df.to_dict(orient='records'),
-        "embeddings": job_embeddings
-    }
-
-    print(f"Saving processed data...")
-
-    output_dir = os.path.dirname(output_path)
-    if output_dir and not os.path.exists(output_dir):
-        print(f"Creating missing directory: {output_dir}")
-        os.makedirs(output_dir, exist_ok=True)
-
-
-    with open(output_path, "wb") as file:
-        pickle.dump(final_payload, file)
-
-    print("\nCOMPLETED SUCCESSFULLY.")
-    print(f"   Generated file: {output_path}")
+        # 4. Vectorización
+        print(f"Creando Embeddings para {len(df)} ofertas...")
+        embeddings = self.model.encode(df['cleaned_text'].tolist(), show_progress_bar=True)
+        
+        # 5. Guardado
+        payload = {
+            "metadata": df.to_dict(orient='records'),
+            "embeddings": embeddings
+        }
+        
+        os.makedirs(os.path.dirname(output_abs), exist_ok=True)
+        with open(output_abs, "wb") as f:
+            pickle.dump(payload, f)
+        
+        print(f"\nOK - GUARDADO EXITOSO: {output_abs}")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input_folder", type=str, help="Carpeta con los JSON")
+    parser.add_argument("--output", type=str, default=None)
+    
+    args = parser.parse_args()
+    
+    final_out = args.output if args.output else os.path.join(args.input_folder, "processed", "vectors_dataset_final.pkl")
+    
+    JobOfferProcessor().run_pipeline(args.input_folder, final_out)
