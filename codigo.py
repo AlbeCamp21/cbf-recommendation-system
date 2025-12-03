@@ -4,7 +4,7 @@ Sistema de Recomendación CBF - Fase 5
 
 Este script analiza el dataset para identificar posibles sesgos
 y limitaciones que deben documentarse en el informe final.
-Incluye gráficos con matplotlib.
+Incluye gráficos con matplotlib con colores
 """
 
 import pickle

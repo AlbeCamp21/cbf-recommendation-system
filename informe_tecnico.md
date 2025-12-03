@@ -90,7 +90,6 @@ Biblioteca desarrollada por Facebook AI para búsqueda de similitud en grandes c
 
 ## 4. METODOLOGÍA
 La metodología del proyecto sigue el estándar CRISP-DM (Cross Industry Standard Process for Data Mining), ampliamente utilizado en proyectos de análisis de datos y aprendizaje automático. Este enfoque permite estructurar el desarrollo del sistema de forma iterativa, organizada y orientada a resultados.
-
 #### 4.1. Fases CRISP-DM
 1. Comprensión del negocio
 
