@@ -54,7 +54,8 @@ class RecommendationEngine:
                 'score': round(job['similarity_score'], 4),
                 'source': job.get('source', 'unknown'),
                 'scraped_at': job.get('scraped_at', 'unknown'),
-                '_source_file': job.get('_source_file', 'unknown')
+                '_source_file': job.get('_source_file', 'unknown'),
+                'category': job.get('category', 'unknown')
             }
             ofertas_formateadas.append(oferta)
         

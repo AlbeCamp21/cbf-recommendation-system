@@ -1,0 +1,502 @@
+[
+  {
+    "id": "perfil_001",
+    "categoria_esperada": "desarrollador",
+    "texto": "Estudiante de último ciclo de Ingeniería de Sistemas. Conocimientos en Python, JavaScript y SQL. Proyectos universitarios con Django y React. Busco mi primera experiencia laboral en desarrollo de software."
+  },
+  {
+    "id": "perfil_002",
+    "categoria_esperada": "contador",
+    "texto": "Contador Público Colegiado con 8 años de experiencia. Especialista en tributación, NIIF y auditoría financiera. Manejo de SAP y Excel avanzado. Experiencia liderando equipos de contabilidad."
+  },
+  {
+    "id": "perfil_003",
+    "categoria_esperada": "marketing",
+    "texto": "Especialista en Marketing Digital con experiencia en gestión de redes sociales, SEO/SEM y campañas de publicidad online. Manejo de herramientas como Google Analytics, Facebook Ads y HubSpot."
+  },
+  {
+    "id": "perfil_004",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente administrativo con experiencia en atención al cliente, manejo de agenda, redacción de documentos y archivo. Dominio de Microsoft Office y herramientas de gestión."
+  },
+  {
+    "id": "perfil_005",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Industrial con experiencia en optimización de procesos, gestión de calidad y seguridad industrial. Conocimientos en Lean Manufacturing y Six Sigma."
+  },
+  {
+    "id": "perfil_006",
+    "categoria_esperada": "desarrollador",
+    "texto": "Desarrollador Full Stack con 3 años de experiencia en Node.js y React. Conocimientos en bases de datos NoSQL como MongoDB. Busco oportunidades para trabajar en proyectos innovadores."
+  },
+  {
+    "id": "perfil_007",
+    "categoria_esperada": "contador",
+    "texto": "Asistente contable con experiencia en registro de compras y ventas, conciliaciones bancarias y declaración de impuestos. Manejo de sistemas contables como Concar y Siscont."
+  },
+  {
+    "id": "perfil_008",
+    "categoria_esperada": "marketing",
+    "texto": "Community Manager creativo y proactivo. Experiencia en creación de contenido para redes sociales, diseño gráfico básico y gestión de comunidades online."
+  },
+  {
+    "id": "perfil_009",
+    "categoria_esperada": "asistente",
+    "texto": "Secretaria ejecutiva bilingüe con experiencia en organización de eventos, manejo de correspondencia y atención a proveedores. Excelente redacción y ortografía."
+  },
+  {
+    "id": "perfil_010",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Civil con experiencia en supervisión de obras, metrados y presupuestos. Conocimientos en AutoCAD y MS Project. Disponibilidad para viajar."
+  },
+  {
+    "id": "perfil_011",
+    "categoria_esperada": "desarrollador",
+    "texto": "Programador Java con experiencia en Spring Boot y microservicios. Conocimientos en Docker y Kubernetes. Interés en arquitectura de software."
+  },
+  {
+    "id": "perfil_012",
+    "categoria_esperada": "contador",
+    "texto": "Analista contable senior. Experiencia en elaboración de estados financieros, análisis de cuentas y reportes gerenciales. Conocimiento de normativa tributaria vigente."
+  },
+  {
+    "id": "perfil_013",
+    "categoria_esperada": "marketing",
+    "texto": "Analista de investigación de mercados. Experiencia en diseño de encuestas, análisis de datos cuantitativos y cualitativos, y elaboración de informes de tendencias."
+  },
+  {
+    "id": "perfil_014",
+    "categoria_esperada": "asistente",
+    "texto": "Recepcionista con excelente presencia y trato al cliente. Experiencia en manejo de central telefónica, recepción de documentos y apoyo administrativo."
+  },
+  {
+    "id": "perfil_015",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Mecánico con experiencia en mantenimiento de maquinaria pesada. Conocimientos en hidráulica, neumática y electricidad automotriz."
+  },
+  {
+    "id": "perfil_016",
+    "categoria_esperada": "desarrollador",
+    "texto": "Desarrollador Mobile (Android/iOS) con experiencia en Flutter y Dart. Publicación de aplicaciones en Google Play y App Store. Conocimientos en consumo de APIs REST."
+  },
+  {
+    "id": "perfil_017",
+    "categoria_esperada": "contador",
+    "texto": "Auditor interno con experiencia en evaluación de control interno, gestión de riesgos y cumplimiento normativo. Certificación CIA deseable."
+  },
+  {
+    "id": "perfil_018",
+    "categoria_esperada": "marketing",
+    "texto": "Coordinador de Marketing con experiencia en planificación estratégica, lanzamiento de productos y gestión de presupuesto. Liderazgo de equipos creativos."
+  },
+  {
+    "id": "perfil_019",
+    "categoria_esperada": "asistente",
+    "texto": "Auxiliar administrativo con conocimientos en facturación electrónica, guías de remisión y control de inventarios. Manejo de Excel intermedio."
+  },
+  {
+    "id": "perfil_020",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero de Minas con experiencia en operaciones a tajo abierto. Conocimientos en planeamiento de minado, perforación y voladura."
+  },
+  {
+    "id": "perfil_021",
+    "categoria_esperada": "desarrollador",
+    "texto": "Ingeniero de Software especializado en Backend. Experiencia con Go y Python. Conocimientos en bases de datos relacionales y no relacionales. Interés en sistemas distribuidos."
+  },
+  {
+    "id": "perfil_022",
+    "categoria_esperada": "contador",
+    "texto": "Contador Junior con ganas de aprender. Egresado universitario con conocimientos básicos de contabilidad y tributación. Manejo de Excel a nivel usuario."
+  },
+  {
+    "id": "perfil_023",
+    "categoria_esperada": "marketing",
+    "texto": "Diseñador Gráfico con experiencia en agencias de publicidad. Dominio de Adobe Creative Suite (Photoshop, Illustrator, InDesign). Creatividad y atención al detalle."
+  },
+  {
+    "id": "perfil_024",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Recursos Humanos. Apoyo en procesos de reclutamiento y selección, control de asistencia y elaboración de legajos de personal."
+  },
+  {
+    "id": "perfil_025",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Agrónomo con experiencia en cultivos de exportación. Conocimientos en manejo integrado de plagas, fertilización y riego tecnificado."
+  },
+  {
+    "id": "perfil_026",
+    "categoria_esperada": "desarrollador",
+    "texto": "Frontend Developer con experiencia en Vue.js y Nuxt.js. Conocimientos en maquetación web con HTML5, CSS3 y Sass. Experiencia en diseño responsive."
+  },
+  {
+    "id": "perfil_027",
+    "categoria_esperada": "contador",
+    "texto": "Jefe de Contabilidad con amplia experiencia en empresas industriales. Manejo de costos de producción, inventarios y activos fijos. Liderazgo y gestión de equipos."
+  },
+  {
+    "id": "perfil_028",
+    "categoria_esperada": "marketing",
+    "texto": "Ejecutivo de Cuentas con experiencia en venta de servicios publicitarios. Cartera de clientes propia. Habilidades de negociación y cierre de ventas."
+  },
+  {
+    "id": "perfil_029",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Logística. Apoyo en compras, seguimiento de órdenes de compra y coordinación con proveedores. Conocimientos en gestión de almacenes."
+  },
+  {
+    "id": "perfil_030",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Ambiental con experiencia en estudios de impacto ambiental, monitoreo de calidad de aire y agua. Conocimiento de normativa ambiental vigente."
+  },
+  {
+    "id": "perfil_031",
+    "categoria_esperada": "desarrollador",
+    "texto": "DevOps Engineer con experiencia en automatización de infraestructura. Conocimientos en AWS, Terraform, Jenkins y Ansible. Experiencia en administración de servidores Linux."
+  },
+  {
+    "id": "perfil_032",
+    "categoria_esperada": "contador",
+    "texto": "Asistente de Tesorería. Experiencia en flujo de caja, pagos a proveedores y conciliaciones bancarias. Manejo de plataformas bancarias."
+  },
+  {
+    "id": "perfil_033",
+    "categoria_esperada": "marketing",
+    "texto": "Redactor Creativo (Copywriter) con experiencia en redacción publicitaria para medios digitales y tradicionales. Excelente ortografía y gramática."
+  },
+  {
+    "id": "perfil_034",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Gerencia. Organización de agenda, coordinación de viajes y reuniones. Manejo de información confidencial. Inglés avanzado."
+  },
+  {
+    "id": "perfil_035",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Electrónico con experiencia en automatización industrial. Conocimientos en PLCs, SCADA y variadores de frecuencia."
+  },
+  {
+    "id": "perfil_036",
+    "categoria_esperada": "desarrollador",
+    "texto": "Data Scientist con experiencia en Machine Learning y Deep Learning. Conocimientos en Python, TensorFlow y PyTorch. Experiencia en análisis de grandes volúmenes de datos."
+  },
+  {
+    "id": "perfil_037",
+    "categoria_esperada": "contador",
+    "texto": "Contador Tributarista. Especialista en fiscalización, devoluciones de impuestos y planeamiento tributario. Conocimiento profundo del Código Tributario."
+  },
+  {
+    "id": "perfil_038",
+    "categoria_esperada": "marketing",
+    "texto": "Analista de E-commerce. Experiencia en gestión de tiendas virtuales, carga de productos y análisis de ventas online. Conocimientos en Shopify o WooCommerce."
+  },
+  {
+    "id": "perfil_039",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente Legal. Apoyo en redacción de escritos, seguimiento de expedientes y trámites notariales. Estudiante de Derecho o egresado."
+  },
+  {
+    "id": "perfil_040",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Químico con experiencia en control de calidad en laboratorios industriales. Conocimientos en normas ISO 17025 y buenas prácticas de laboratorio."
+  },
+  {
+    "id": "perfil_041",
+    "categoria_esperada": "desarrollador",
+    "texto": "QA Automation Engineer. Experiencia en pruebas automatizadas con Selenium y Appium. Conocimientos en metodologías ágiles y herramientas de gestión de defectos."
+  },
+  {
+    "id": "perfil_042",
+    "categoria_esperada": "contador",
+    "texto": "Asistente de Planillas. Experiencia en cálculo de beneficios sociales, AFP y PLAME. Conocimiento de legislación laboral vigente."
+  },
+  {
+    "id": "perfil_043",
+    "categoria_esperada": "marketing",
+    "texto": "Planner de Medios. Experiencia en planificación y compra de medios digitales y offline. Análisis de audiencias y optimización de presupuesto."
+  },
+  {
+    "id": "perfil_044",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Marketing. Apoyo en la ejecución de campañas, organización de eventos y gestión de material promocional. Proactivo y dinámico."
+  },
+  {
+    "id": "perfil_045",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero de Seguridad y Salud Ocupacional. Experiencia en implementación de sistemas de gestión de seguridad, capacitaciones y prevención de riesgos."
+  },
+  {
+    "id": "perfil_046",
+    "categoria_esperada": "desarrollador",
+    "texto": "Arquitecto de Software con amplia experiencia en diseño de soluciones empresariales. Conocimientos en patrones de diseño, microservicios y cloud computing."
+  },
+  {
+    "id": "perfil_047",
+    "categoria_esperada": "contador",
+    "texto": "Contador General para empresa de servicios. Responsable de todo el ciclo contable, impuestos y estados financieros. Experiencia en implementación de ERPs."
+  },
+  {
+    "id": "perfil_048",
+    "categoria_esperada": "marketing",
+    "texto": "Growth Hacker con experiencia en estrategias de adquisición y retención de usuarios. Análisis de métricas y experimentación constante (A/B testing)."
+  },
+  {
+    "id": "perfil_049",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Compras. Búsqueda y negociación con proveedores, emisión de órdenes de compra y seguimiento de entregas. Manejo de SAP."
+  },
+  {
+    "id": "perfil_050",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero de Proyectos. Experiencia en gestión de proyectos de ingeniería, control de costos y cronogramas. Certificación PMP deseable."
+  },
+  {
+    "id": "perfil_051",
+    "categoria_esperada": "desarrollador",
+    "texto": "Arquitecto de Software con experiencia en Java Spring Boot, microservicios y despliegue en contenedores Docker y Kubernetes. Nivel Senior."
+  },
+  {
+    "id": "perfil_052",
+    "categoria_esperada": "desarrollador",
+    "texto": "Programador Frontend Junior con dominio de Vue.js, Nuxt y Tailwind CSS. Interés en diseño UI/UX y accesibilidad web."
+  },
+  {
+    "id": "perfil_053",
+    "categoria_esperada": "desarrollador",
+    "texto": "Desarrollador Móvil con experiencia en aplicaciones nativas Android (Kotlin) e iOS (Swift). Publicación de apps en tiendas."
+  },
+  {
+    "id": "perfil_054",
+    "categoria_esperada": "desarrollador",
+    "texto": "Data Scientist con sólidos conocimientos en Python, Pandas, Scikit-learn y algoritmos de Machine Learning. Experiencia en modelado predictivo."
+  },
+  {
+    "id": "perfil_055",
+    "categoria_esperada": "desarrollador",
+    "texto": "Ingeniero DevOps con experiencia en AWS, implementación de pipelines CI/CD con Jenkins y gestión de infraestructura como código con Terraform."
+  },
+  {
+    "id": "perfil_056",
+    "categoria_esperada": "desarrollador",
+    "texto": "Desarrollador Backend PHP con experiencia en framework Laravel y bases de datos MySQL. Mantenimiento y refactorización de sistemas legados."
+  },
+  {
+    "id": "perfil_057",
+    "categoria_esperada": "desarrollador",
+    "texto": "Desarrollador .NET con dominio de C#, .NET Core y servicios en Azure. Experiencia en bases de datos SQL Server y arquitectura en capas."
+  },
+  {
+    "id": "perfil_058",
+    "categoria_esperada": "desarrollador",
+    "texto": "Desarrollador Full Stack Ruby on Rails. Experiencia con PostgreSQL y uso de Redis para caché. Desarrollo ágil con Scrum."
+  },
+  {
+    "id": "perfil_059",
+    "categoria_esperada": "desarrollador",
+    "texto": "Desarrollador de Videojuegos utilizando Unity y C#. Conocimientos básicos de modelado 3D y física de juegos."
+  },
+  {
+    "id": "perfil_060",
+    "categoria_esperada": "desarrollador",
+    "texto": "QA Automation Engineer. Experiencia creando scripts de prueba con Selenium y Cypress. Conocimientos de programación en Python."
+  },
+  {
+    "id": "perfil_061",
+    "categoria_esperada": "contador",
+    "texto": "Auditor Interno con experiencia en evaluación de control interno, gestión de riesgos y marco COSO. Redacción de informes de auditoría."
+  },
+  {
+    "id": "perfil_062",
+    "categoria_esperada": "contador",
+    "texto": "Analista de Costos y Presupuestos. Experiencia en elaboración de proyecciones financieras, análisis de desviaciones y control de gastos."
+  },
+  {
+    "id": "perfil_063",
+    "categoria_esperada": "contador",
+    "texto": "Analista de Tesorería. Gestión de flujo de caja, conciliaciones bancarias, pagos a proveedores y relaciones con entidades financieras."
+  },
+  {
+    "id": "perfil_064",
+    "categoria_esperada": "contador",
+    "texto": "Perito Contable Judicial. Especialista en contabilidad forense, peritajes y valoración de daños económicos."
+  },
+  {
+    "id": "perfil_065",
+    "categoria_esperada": "contador",
+    "texto": "Asesor Tributario. Experiencia en fiscalizaciones de SUNAT, planeamiento tributario y precios de transferencia."
+  },
+  {
+    "id": "perfil_066",
+    "categoria_esperada": "contador",
+    "texto": "Contador Gubernamental con certificación en SIAF. Experiencia en gestión presupuestal y contable en entidades del estado."
+  },
+  {
+    "id": "perfil_067",
+    "categoria_esperada": "contador",
+    "texto": "Analista de Planillas (Payroll). Cálculo de beneficios sociales, gratificaciones, CTS y liquidaciones. Conocimiento de legislación laboral vigente."
+  },
+  {
+    "id": "perfil_068",
+    "categoria_esperada": "contador",
+    "texto": "Contador General. Responsable del cierre de estados financieros mensuales y anuales. Reporte directo a gerencia general."
+  },
+  {
+    "id": "perfil_069",
+    "categoria_esperada": "contador",
+    "texto": "Auxiliar Contable. Apoyo en facturación electrónica, registro de comprobantes y archivo de documentación contable."
+  },
+  {
+    "id": "perfil_070",
+    "categoria_esperada": "contador",
+    "texto": "Consultor Financiero. Evaluación de proyectos de inversión, análisis de rentabilidad y estructuración de financiamiento."
+  },
+  {
+    "id": "perfil_071",
+    "categoria_esperada": "marketing",
+    "texto": "Growth Hacker enfocado en experimentación rápida y estrategias de adquisición de usuarios. Análisis de métricas de conversión."
+  },
+  {
+    "id": "perfil_072",
+    "categoria_esperada": "marketing",
+    "texto": "Brand Manager. Desarrollo de estrategia de marca, posicionamiento en el mercado y gestión de identidad corporativa."
+  },
+  {
+    "id": "perfil_073",
+    "categoria_esperada": "marketing",
+    "texto": "Especialista SEO. Experiencia en optimización on-page y off-page, link building y auditorías técnicas de sitios web."
+  },
+  {
+    "id": "perfil_074",
+    "categoria_esperada": "marketing",
+    "texto": "Especialista en Email Marketing. Creación de flujos de automatización, segmentación de bases de datos y manejo de Mailchimp."
+  },
+  {
+    "id": "perfil_075",
+    "categoria_esperada": "marketing",
+    "texto": "Coordinador de Relaciones Públicas. Gestión de prensa, redacción de notas de prensa y comunicación corporativa interna y externa."
+  },
+  {
+    "id": "perfil_076",
+    "categoria_esperada": "marketing",
+    "texto": "Analista de Investigación de Mercados. Experiencia en metodologías cualitativas y cuantitativas, focus groups y encuestas."
+  },
+  {
+    "id": "perfil_077",
+    "categoria_esperada": "marketing",
+    "texto": "Analista de Trade Marketing. Gestión de punto de venta, material POP, merchandising y capacitación a fuerza de ventas."
+  },
+  {
+    "id": "perfil_078",
+    "categoria_esperada": "marketing",
+    "texto": "Content Manager. Definición de estrategia de contenidos, gestión de blog corporativo y producción de guiones para video."
+  },
+  {
+    "id": "perfil_079",
+    "categoria_esperada": "marketing",
+    "texto": "UX Writer. Redacción de textos para interfaces digitales, microcopy y creación de guías de estilo de voz y tono."
+  },
+  {
+    "id": "perfil_080",
+    "categoria_esperada": "marketing",
+    "texto": "E-commerce Manager. Gestión de tiendas online en Shopify y VTEX. Carga de catálogo, logística y atención al cliente digital."
+  },
+  {
+    "id": "perfil_081",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Gerencia. Coordinación de agenda compleja, reserva de viajes, liquidación de viáticos y redacción de actas de directorio."
+  },
+  {
+    "id": "perfil_082",
+    "categoria_esperada": "asistente",
+    "texto": "Recepcionista. Manejo de central telefónica, recepción de visitantes, gestión de mensajería y apoyo administrativo básico."
+  },
+  {
+    "id": "perfil_083",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Recursos Humanos. Control de asistencia, gestión de legajos de personal y apoyo en procesos de inducción."
+  },
+  {
+    "id": "perfil_084",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente Logístico. Control de inventarios, emisión de guías de remisión y coordinación con transportistas."
+  },
+  {
+    "id": "perfil_085",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente Legal. Seguimiento de expedientes judiciales, trámites en notarías y registros públicos. Redacción de escritos simples."
+  },
+  {
+    "id": "perfil_086",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente Comercial. Elaboración de cotizaciones, seguimiento a clientes, actualización de CRM y soporte a la fuerza de ventas."
+  },
+  {
+    "id": "perfil_087",
+    "categoria_esperada": "asistente",
+    "texto": "Digitador. Ingreso masivo de datos al sistema con alta velocidad y precisión. Verificación de información ingresada."
+  },
+  {
+    "id": "perfil_088",
+    "categoria_esperada": "asistente",
+    "texto": "Asistente de Operaciones. Coordinación de rutas de distribución, monitoreo de flota y reporte de incidencias operativas."
+  },
+  {
+    "id": "perfil_089",
+    "categoria_esperada": "asistente",
+    "texto": "Auxiliar Administrativo. Organización de archivo físico y digital, trámites municipales y gestión de suministros de oficina."
+  },
+  {
+    "id": "perfil_090",
+    "categoria_esperada": "asistente",
+    "texto": "Representante de Atención al Cliente. Gestión de reclamos, atención telefónica y por chat. Experiencia en call center."
+  },
+  {
+    "id": "perfil_091",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Mecánico. Experiencia en mantenimiento de flota pesada, sistemas hidráulicos y gestión de repuestos."
+  },
+  {
+    "id": "perfil_092",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Electricista. Especialista en sistemas de alta tensión, mantenimiento de subestaciones y tableros eléctricos."
+  },
+  {
+    "id": "perfil_093",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero de Minas. Experiencia en planeamiento de minado, perforación y voladura. Conocimiento de normativa de seguridad minera."
+  },
+  {
+    "id": "perfil_094",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Agrónomo. Gestión de cultivos de agroexportación, manejo de sistemas de riego tecnificado y control de plagas."
+  },
+  {
+    "id": "perfil_095",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Químico. Control de calidad en laboratorio industrial, análisis de muestras y validación de métodos de ensayo."
+  },
+  {
+    "id": "perfil_096",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero de Telecomunicaciones. Diseño e implementación de redes de fibra óptica y despliegue de infraestructura 5G."
+  },
+  {
+    "id": "perfil_097",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Ambiental. Elaboración de Estudios de Impacto Ambiental (EIA), monitoreo ambiental y gestión de residuos sólidos."
+  },
+  {
+    "id": "perfil_098",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Mecatrónico. Diseño de sistemas de automatización industrial, programación de PLC y robótica."
+  },
+  {
+    "id": "perfil_099",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero Civil Estructural. Cálculo y diseño de estructuras de concreto armado y acero. Uso de software SAP2000."
+  },
+  {
+    "id": "perfil_100",
+    "categoria_esperada": "ingeniero",
+    "texto": "Ingeniero de Seguridad (SSOMA). Implementación de sistemas de gestión de seguridad y salud ocupacional. Prevención de riesgos."
+  }
+]
